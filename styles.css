@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "RM Mono";
+  src: local("RM Mono Regular"), local("RMMono-Regular"), url("font/RMMono-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron-Regular";
+  src: local("Orbitron Regular"), local("Orbitron-Regular"), url("font/Orbitron-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  font-family: "Orbitron-Regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #212121;
+}
+
+.container {
+  padding: 50px 0;
+  display: none;
+}
+.container canvas {
+  background-color: #000;
+  border: 5px solid #fff;
+}
+.container .control {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.container .control input[type=range] {
+  width: 70%;
+}
+.container .control label {
+  width: 25%;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}

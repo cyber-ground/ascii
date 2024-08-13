@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'RM Mono';
+  src: local('RM Mono Regular'), local('RMMono-Regular'),
+  url('font/RMMono-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron-Regular';
+  src: local('Orbitron Regular'), local('Orbitron-Regular'),
+  url('font/Orbitron-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+// ----------------------------------------
+//* Ascii art ---
+
+$bg: #212121;
+body {
+  // font-family: 'Poppins', serif;
+  font-family: 'Orbitron-Regular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bg;
+  
+}
+
+
+.container {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // mix-blend-mode: difference;
+  // filter: brightness(2) hue-rotate(200deg);
+  padding: 50px 0;
+  display: none;
+  canvas {
+    background-color: #000;
+    border: 5px solid #fff;
+  }
+  .control {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    // opacity: 0; //* screenShot
+    input[type="range"] {
+      width: 70%;
+    }
+    label {
+      width: 25%;
+      color: #fff;;
+      font-size: 14px;
+      letter-spacing: .5px;
+    }
+  }
+}
+
+// ----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
